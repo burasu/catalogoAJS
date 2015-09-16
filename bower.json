@@ -1,0 +1,9 @@
+{
+  "name": "catalogoAJS",
+  "version": "0.0.1",
+  "description": "Catálogo sencillo desarrollado en AngularJS",
+  "dependencies": {
+    "angular": "~1.4.5",
+    "bootstrap": "~3.3.5"
+  }
+}
