@@ -2,7 +2,7 @@
 {
     'use strict';
 
-    angular.module('GalleryApp', ['ngRoute', 'GalleryApp.controllers']);
+    angular.module('GalleryApp', ['ngRoute', 'GalleryApp.controllers', 'GalleryApp.templates']);
 
     function configuracion ($routeProvider)
     {

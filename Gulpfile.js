@@ -93,10 +93,10 @@ gulp.task('wiredep', function() {
 // Compila las plantillas HTML parciales a JavaScript
 // para ser inyectadas por AngularJS y minificar el código.
 gulp.task('templates', function() {
-    gulp.src('./app/views/**/*.tpl.html')
+    gulp.src('./app/views/**/*.html')
         .pipe(templateCache({
             root: 'views/',
-            module: 'blog.templates',
+            module: 'GalleryApp.templates',
             standalone: true
         }))
         .pipe(gulp.dest('./app/scripts'));
@@ -116,8 +116,7 @@ gulp.task('compress', function() {
 gulp.task('uncss', function() {
     gulp.src('./dist/css/style.min.css')
         .pipe(uncss({
-//            html: ['./app/index.html', './app/views/post-detail.tpl.html', './app/views/post-list.tpl.html']
-            html: ['./app/index.html']
+            html: ['./app/index.html', './app/views/home.html', './app/views/photo.html']
         }))
         .pipe(gulp.dest('./dist/css'));
 });
