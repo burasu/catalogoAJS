@@ -4,6 +4,7 @@
   "description": "Catálogo sencillo desarrollado en AngularJS",
   "dependencies": {
     "angular": "~1.4.5",
+    "angular-route": "~1.4.5",
     "bootstrap": "~3.3.5"
   }
 }
